@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 
-@ComponentScan(basePackages={“com.app”})
+@ComponentScan
 @EnableAutoConfiguration
 public class Application extends SpringBootServletInitializer {
 
