@@ -1,5 +1,5 @@
 package com.app;
-package com.technicalkeeda.app;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 
-@ComponentScan
+@ComponentScan(basePackages={“com.app”})
 @EnableAutoConfiguration
 public class Application extends SpringBootServletInitializer {
 
