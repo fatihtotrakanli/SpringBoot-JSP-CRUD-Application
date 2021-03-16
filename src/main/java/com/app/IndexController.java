@@ -18,7 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 //Controller sınıfı
 //Temel map olarak /index atanmıştır. Proje ' localhost:8080/index ' adresinde çalışmaktadır. 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("")
 public class IndexController {
 
 	
@@ -42,7 +42,7 @@ public class IndexController {
 	   @RequestMapping(value = "/{id}/delete", method = RequestMethod.GET)
 	    public ModelAndView deleteUsers(@PathVariable long id) {
 		   	userService.deleteUser(id);
-	        return new ModelAndView("redirect:/index");
+	        return new ModelAndView("redirect:");
 	    }
 	   
 	  
@@ -60,7 +60,7 @@ public class IndexController {
     		model.addObject("danger","Something Going Bad" );
     		
     	}
-    	return new ModelAndView("redirect:/index");
+    	return new ModelAndView("redirect:");
     }
     	  @RequestMapping(value = "/{id}/edit", method = RequestMethod.GET)
     	    public ModelAndView edit(@PathVariable("id") long id) {
@@ -81,7 +81,7 @@ public class IndexController {
     	        user.setSurname(surname);
     	        user.setAdress(adress);
     	        userService.saveUser(user);
-    	        return new ModelAndView("redirect:/index");
+    	        return new ModelAndView("redirect:");
     	    }
    
 }
