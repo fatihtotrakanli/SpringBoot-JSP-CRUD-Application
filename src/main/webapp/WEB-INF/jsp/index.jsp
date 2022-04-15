@@ -4,7 +4,7 @@
 
 <h3>User Registration</h3>
 <br>
-<form action='/index/add' method='post'>
+<form action='/add' method='post'>
  
     <table class='table table-hover table-responsive table-bordered'>
  
@@ -58,12 +58,12 @@
         <td><c:out value="${lou.adress}"></c:out></td>
 
 			 <td>
-             <a href="/index/${lou.id}/edit">
+             <a href="/${lou.id}/edit">
                 <button type="submit" class="btn btn-primary">Edit User</button>
                 </a>
             </td>
             <td>
-             <a href="/index/${lou.id}/delete">
+             <a href="/${lou.id}/delete">
                 <button type="submit" class="btn btn-primary">Delete User</button>
                 </a>
             </td>

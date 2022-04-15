@@ -5,7 +5,7 @@
 <div class="container">
 
 <h3>User Registration</h3>
-<form action='/index/update' method='post'>
+<form action='/update' method='post'>
  
     <table class='table table-hover table-responsive table-bordered'>
  
